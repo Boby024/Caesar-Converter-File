@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+}
+.fileContent{
+    text-align: center;
+}
+#custom-button{
+  padding: 10px;
+  color: black;
+  background-color: lightskyblue;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin: auto;
+    height: 150px;
+    width: 300px;
+
+}
+#custom-button:hover{
+  background-color: grey;
+}
+.centerContent{
+    text-align: center;
+    line-height: 100px;
+
+}
+.styleBtn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: black;
+    background-color: lightskyblue;
+}
+.styleBtn:focus{
+    background-color: grey;
+}
+.keyCaeser{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 50px;
+    height: 12px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Caeser-Online-Converter</title>
+</head>
+<body>
+<h1>Caeser-Online-Converter</h1>
+<div style="margin-top: 20px; margin-bottom: 20px">Versuchen einen Text oder ein ganz komplettes File zu verschlüssen</div>
+ <div class="fileContent">
+     <div>
+      <input type="file" id="real-file"
+             hidden="hidden" accept="application/pdf, text/plain">
+      <div id="custom-button" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"><p class="centerContent">drag and drop your file</p></div>
+     </div>
+    <div id="fileName" style="margin-top: 10px"></div>
+     <div id="btnSend" style="display: none">
+         <label>Caeser Key:</label><input type="number" class="keyCaeser" id="keyCaeser">
+         <button class="styleBtn" id="styleBtn">send your File</button>
+         <div id="keyError" style="color: red;"></div>
+         <div> <div class="styleBtn" id="downloadFile" style="display: none"></div></div>
+     </div>
+     <div id="fileContents" style="margin-top: 10px"></div>
+     <div id="feedbackFlask"></div>
+ </div>
+
+<script src="main.js"></script>
+</body>
+</html>
