@@ -4,12 +4,12 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 from templates.Caesar import transformation
 
-UPLOAD_FOLDER = ''
-path =          ''
+UPLOAD_FOLDER = 'C:\\Users\\William\\Desktop\\myPersoProjects\\Caesar-Converter\\templates\\uploads'
+path =          'C:\\Users\\William\\Desktop\\myPersoProjects\\Caesar-Converter\\templates\\uploads\\'
 
 
 
-ALLOWED_EXTENSIONS = {'txt', 'pdf'}
+ALLOWED_EXTENSIONS = {'txt'}
 
 app = Flask(__name__)
 CORS(app)

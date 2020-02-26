@@ -86,13 +86,13 @@ function catchFile(event) {
     lastTestFile = event.target.files[0];
     console.log(lastTestFile);
     btnSend.style.display = 'none';
-    if (lastTestFile &&  lastTestFile.size > 0 && lastTestFile.size < 1024*1024) {
+    if (lastTestFile &&  lastTestFile.size > 0 && lastTestFile.size < 1024*1024 && lastTestFile.type === 'text/plain') {
       document.getElementById('fileName').innerHTML = lastTestFile.name;
       btnSend.style.display = 'block';
       this.checkerSendToServer(lastTestFile);
 
     } else {
-      document.getElementById('fileName').innerHTML = 'wählen Sie nochmal eine Datei kleiner als 1 MB';
+      document.getElementById('fileName').innerHTML = 'Wählen Sie nochmal eine Datei (txt Dateien) kleiner als 1 MB';
     }
   }
 
@@ -102,7 +102,7 @@ function dropHandler(e) {
    e.preventDefault();
    btnSend.style.display = 'none';
    if(btwfileDragDrog[0]) {
-       if(btwfileDragDrog[0].kind === 'file' && (btwfileDragDrog[0].type === 'text/plain' || btwfileDragDrog[0].type === 'application/pdf') ) {
+       if(btwfileDragDrog[0].kind === 'file' && btwfileDragDrog[0].type === 'text/plain' ) {
            fileDragDrog = btwfileDragDrog[0].getAsFile();
            if(fileDragDrog.size > 0 &&fileDragDrog.size < 1024*1024){
                document.getElementById('fileName').innerHTML = fileDragDrog.name;
@@ -113,7 +113,7 @@ function dropHandler(e) {
            }
 
        } else {
-           document.getElementById('fileName').innerHTML = 'Wählen Sie nochmal eine Datei (txt oder pdf Dateien) kleiner als 1 MB';
+           document.getElementById('fileName').innerHTML = 'Wählen Sie nochmal eine Datei (txt Dateien) kleiner als 1 MB';
        }
    } else {
        let fileDragDrog2 = e.dataTransfer.files[0];
@@ -123,7 +123,7 @@ function dropHandler(e) {
            btnSend.style.display = 'block';
            this.checkerSendToServer(lastTestFile);
        } else {
-           document.getElementById('fileName').innerHTML = 'Wählen Sie nochmal eine Datei (txt oder pdf Dateien)  kleiner als 1 MB';
+           document.getElementById('fileName').innerHTML = 'Wählen Sie nochmal eine Datei (txt Datein)  kleiner als 1 MB';
        }
    }
 }
