@@ -1,5 +1,5 @@
 # Caesar-Converter-File: JavaScript and Flask 
-Zum Verschlüsseln (mit Key) eines Texts oder File (txt and pdf) mit Caeser-Encryption
+Zum Verschlüsseln (mit Key) eines Texts oder File (.txt extension) mit Caeser-Encryption
 
 + using Drag and Drog
 + oder the standart imput methode from Html5
@@ -8,4 +8,4 @@ Zum Verschlüsseln (mit Key) eines Texts oder File (txt and pdf) mit Caeser-Encr
 Note: Momentan funktiniert nur mit txt File (Implementieren für PDF kommt später)
 Voraussetzungen gecheckt:
 + File unter 1 MB => gesandt mit REST-API
-+ JavaScript checkt, if File (txt, pdf) ist ; und auch Html5
++ JavaScript checkt, if File (.txt) ist ; und auch Html5
