@@ -4,8 +4,8 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 from templates.Caesar import transformation
 
-UPLOAD_FOLDER = 'C:\\Users\\William\\Desktop\\myPersoProjects\\Caesar-Converter\\templates\\uploads'
-path =          'C:\\Users\\William\\Desktop\\myPersoProjects\\Caesar-Converter\\templates\\uploads\\'
+UPLOAD_FOLDER = ''
+path =          ''
 
 
 
